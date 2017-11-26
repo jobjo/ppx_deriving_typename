@@ -1,4 +1,4 @@
-### ppx_deriving_typename
+# ppx_deriving_typename
 This project serves as a simple example of how to build type driver ppx rewriters.
 It defines a silly ppx `ppx_deriving_typename` for deriving the names of 
 custom data types defined with a `[@@deriving typename]` attribute.
