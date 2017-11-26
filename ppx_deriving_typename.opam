@@ -1,0 +1,18 @@
+opam-version: "1.2"
+maintainer: "name <name@domain.net>"
+authors: "Foo Barson"
+homepage: "https://github.com/"
+dev-repo: "git+https://github.com/"
+bug-reports: "https://github.com/"
+build: ["jbuilder" "build" "-p" name "-j" jobs]
+build-test: ["jbuilder" "runtest" "-p" name "-j" jobs]
+version: "0.1"
+depends: [
+  "base"
+  "ppx_core" {build}
+  "ppx_type_conv" {build}
+  "ppx_driver" {build}
+  "jbuilder" {build}
+  "ppx_metaquot" {build}
+]
+available: [ ocaml-version >= "4.03.0" ]

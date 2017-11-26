@@ -1,0 +1,10 @@
+(jbuild_version 1)
+
+(executable (
+ (name run)
+ (libraries ())
+ (preprocess (pps (ppx_deriving_typename ppx_driver.runner)))
+))
+(alias
+  ((name   runtest)
+   (action (run ${exe:run.exe}))))
